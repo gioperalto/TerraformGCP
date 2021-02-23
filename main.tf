@@ -8,10 +8,9 @@ provider "google" {
 
 terraform {
   backend "local" {
-    path = "./terraform.tfstate"
+    path = "/tmp/terraform.tfstate"
   }
 }
-
 
 #VPC creation
 resource "google_compute_network" "vpc_network" {
