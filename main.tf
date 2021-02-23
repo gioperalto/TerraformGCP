@@ -1,6 +1,6 @@
 # Provider
 provider "google" {
-  credentials = file("gcp-basic-305608-beca51c5855c.json")
+  credentials = file("/tmp/creds.json")
   project     = "gcp-basic-305608"
   region      = "us-central1"
   zone        = "us-central1-c"
@@ -16,6 +16,7 @@ terraform {
 resource "google_compute_network" "vpc_network" {
   name = "${var.resource_name}-vpc"
 }
+
 #VM creation 
 resource "google_compute_instance" "vm_instance" {
   name         = "${var.resource_name}-instance"
