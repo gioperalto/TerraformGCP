@@ -8,7 +8,7 @@ provider "google" {
 
 terraform {
   backend "local" {
-    path = "/home/ubuntu/terraform.tfstate"
+    path = "/opt/terraform.tfstate"
   }
 }
 
