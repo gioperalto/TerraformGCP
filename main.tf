@@ -8,7 +8,7 @@ provider "google" {
 
 terraform {
   backend "local" {
-    path = "/tmp/terraform.tfstate"
+    path = "/tmp/sfainfra-terraform.tfstate"
   }
 }
 
